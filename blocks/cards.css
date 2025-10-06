@@ -14,17 +14,8 @@
   gap: 40px 20px;
 }
 
-.card__title {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.4;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 @media screen and (max-width: 627px) {
-  .card__list {
+  .cards__list {
     grid-template-columns: repeat(auto-fit, 288px);
   }
 }
