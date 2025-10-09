@@ -1,0 +1,95 @@
+.modal {
+  visibility: hidden;
+  background-color: #00000080;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.modal_is-opened {
+  visibility: visible;
+}
+
+.modal__container {
+  max-width: 730px;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 32px 50px;
+  position: relative;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  background-image: url(/images/Close\ Icon.png);
+}
+
+.modal__title {
+  margin: 0 0 32px;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__label {
+  margin: 0 0 32px;
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 16px 8px;
+  color: #2121219d;
+}
+
+.modal__input {
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 6px;
+  padding: 10px 12px;
+  background: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  color: #212121;
+  outline: none;
+  margin: 0;
+}
+
+.modal__submit-btn {
+  align-self: flex-start;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 52px;
+  width: 156px;
+  margin-top: 16px;
+  padding: 0px 32px;
+  border: none;
+  border-radius: 8px;
+  background: #1f1f1f;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.modal__input::placeholder {
+  color: #2121214d;
+}
