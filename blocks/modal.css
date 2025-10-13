@@ -45,12 +45,11 @@
   display: flex;
   flex-direction: column;
 }
-s .modal__label {
+.modal__label {
   margin: 0 0 32px;
   display: block;
   font-weight: 500;
   font-size: 16px;
-  padding: 16px 8px;
   color: #2121219d;
 }
 
@@ -91,4 +90,10 @@ s .modal__label {
 
 .modal__input::placeholder {
   color: #2121214d;
+}
+
+@media screen and (max-width: 627px) {
+  .modal__container {
+    padding: 12px; /* ← from Figma */
+  }
 }
