@@ -40,7 +40,7 @@ const newPostBtn = document.querySelector(".profile__add-btn");
 const newPostModal = document.querySelector("#new-post-modal");
 const newPostFormEl = newPostModal.querySelector(".modal__form");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
-const newPostNameInput = newPostModal.querySelector("#new-post-name-input");
+const newPostNameInput = newPostModal.querySelector("#card-image-input");
 const newPostDescriptionInput = newPostModal.querySelector(
   "#new-post-description-input"
 );
