@@ -35,6 +35,10 @@
   background: transparent;
   box-shadow: none;
   background-image: url(/images/Close\ Icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  cursor: pointer;
 }
 
 .modal__title {
@@ -45,6 +49,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .modal__label {
   margin: 0 0 32px;
   display: block;
@@ -90,6 +95,25 @@
 
 .modal__input::placeholder {
   color: #2121214d;
+}
+
+.modal__container_type_preview {
+  max-width: min(80vw, 1024px);
+  width: auto;
+  padding: 20px;
+}
+
+.modal__image {
+  max-width: 80vw;
+  max-height: 80vh;
+  display: block;
+  border-radius: 8px;
+}
+
+.modal__caption {
+  margin: 8px 2px 2px;
+  font-size: 14px;
+  color: #212121;
 }
 
 @media screen and (max-width: 627px) {
