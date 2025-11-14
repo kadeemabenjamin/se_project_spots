@@ -1,5 +1,6 @@
 .modal {
   visibility: hidden;
+  opacity: 0;
   background-color: #00000080;
   position: fixed;
   top: 0;
@@ -10,10 +11,12 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
 }
 
 .modal_is-opened {
   visibility: visible;
+  opacity: 1;
 }
 
 .modal__container {
@@ -34,11 +37,16 @@
   border: 0;
   background: transparent;
   box-shadow: none;
-  background-image: url(/images/Close\ Icon.png);
+  background-image: url("../images/Close-Icon.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 24px 24px;
   cursor: pointer;
+}
+
+.modal__close-btn:hover,
+.modal__close-btn:focus-visible {
+  opacity: 0.7;
 }
 
 .modal__title {
@@ -91,6 +99,11 @@
   font-weight: 500;
   line-height: 100%;
   cursor: pointer;
+}
+
+.modal__submit-btn:hover,
+.modal__submit-btn:focus-visible {
+  background: #000000;
 }
 
 .modal__input::placeholder {

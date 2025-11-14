@@ -1,3 +1,7 @@
+.card {
+  position: relative;
+}
+
 .card__title {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -45,8 +49,13 @@
   cursor: pointer;
 }
 
+.card__like-button:hover,
+.card__like-button:focus-visible {
+  opacity: 1;
+}
+
 .card__like-button_active {
-  background-image: url(../images/Heart-icon-active.svg);
+  background-image: url(../images/Heart-icon.svg);
   opacity: 1;
 }
 
@@ -54,9 +63,17 @@
   width: 24px;
   height: 24px;
   border: none;
-  background: transparent url(../images/Delete-icon.svg) center/contain
+  background: transparent url(../images/Delete-icon.png) center/contain
     no-repeat;
   cursor: pointer;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.card__delete-button:hover,
+.card__delete-button:focus-visible {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 627px) {
