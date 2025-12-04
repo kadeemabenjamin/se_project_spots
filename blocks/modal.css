@@ -49,6 +49,14 @@
   opacity: 0.7;
 }
 
+.modal__close-btn_type_preview {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  background-image: url("../images/Close-Icon.png");
+  filter: invert(1);
+}
+
 .modal__title {
   margin: 0 0 32px;
 }
@@ -113,7 +121,9 @@
 .modal__container_type_preview {
   max-width: min(80vw, 1024px);
   width: auto;
-  padding: 20px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
 }
 
 .modal__image {
@@ -124,9 +134,21 @@
 }
 
 .modal__caption {
-  margin: 8px 2px 2px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 4px 10px;
   font-size: 14px;
-  color: #212121;
+  font-weight: 400;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 @media screen and (max-width: 627px) {
