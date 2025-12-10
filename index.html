@@ -99,7 +99,7 @@
               minlength="2"
               maxlength="40"
             />
-            <span class="modal__error">ERROR!!!</span>
+            <span id="profile-name-input-error" class="modal__error"></span>
             <label class="modal__label" for="profile-description-input"
               >Description</label
             >
@@ -113,7 +113,10 @@
               minlength="2"
               maxlength="200"
             />
-            <span class="modal__error">ERROR!!!</span>
+            <span
+              id="profile-description-input-error"
+              class="modal__error"
+            ></span>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
         </div>
@@ -137,9 +140,10 @@
               class="modal__input"
               placeholder="Give your spot a title"
               required
-              minlength="1"
-              maxlength="40"
+              minlength="2"
+              maxlength="30"
             />
+            <span id="card-title-input-error" class="modal__error"></span>
             <label class="modal__label" for="card-image-input"
               >Image link</label
             >
@@ -151,6 +155,7 @@
               placeholder="Place the link to the picture"
               required
             />
+            <span id="card-image-input-error" class="modal__error"></span>
             <button type="submit" class="modal__submit-btn">Save</button>
           </form>
         </div>

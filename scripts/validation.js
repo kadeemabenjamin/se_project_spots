@@ -42,9 +42,7 @@ function setEventListeners(formElement, config) {
     formElement.querySelectorAll(config.inputSelector)
   );
   const buttonElement = formElement.querySelector(config.submitButtonSelector);
-
   toggleButtonState(inputList, buttonElement, config);
-
   inputList.forEach((inputElement) => {
     inputElement.addEventListener("input", () => {
       checkInputValidity(formElement, inputElement, config);
@@ -59,7 +57,6 @@ export function enableValidation(config) {
     formElement.addEventListener("submit", (evt) => {
       evt.preventDefault();
     });
-
     setEventListeners(formElement, config);
   });
 }
@@ -77,3 +74,14 @@ export function resetFormValidation(formElement, config) {
     buttonElement.disabled = true;
   }
 }
+
+const validationConfig = {
+  formSelector: ".modal__form",
+  inputSelector: ".modal__input",
+  submitButtonSelector: ".modal__submit-btn",
+  inactiveButtonClass: "modal__submit-btn_disabled",
+  inputErrorClass: "modal__input_type_error",
+  errorClass: "modal__error_visible",
+};
+
+enableValidation(validationConfig);

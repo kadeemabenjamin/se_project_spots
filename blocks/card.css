@@ -60,9 +60,10 @@
 }
 
 .card__like-button_active {
-  background-image: url("../images/Heart-icon-active.svg");
+  background-image: url("../images/Heart-icon.svg");
   opacity: 1;
   transform: translateY(-1px);
+  filter: saturate(4) brightness(0.9) hue-rotate(-20deg);
 }
 
 .card__delete-button {
@@ -91,14 +92,12 @@
     width: 288px;
     height: 288px;
   }
-
   .card__delete-button {
     top: 8px;
     right: 8px;
     width: 24px;
     height: 24px;
   }
-
   .card__like-button {
     width: 24px;
     height: 24px;
